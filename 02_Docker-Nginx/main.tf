@@ -22,7 +22,7 @@ resource "docker_container" "nginx_container" {
   image = docker_image.nginx.image_id
 
   ports {
-    internal = 80   # port du conteneur
-    external = 8080 # port sur ta machine
+    internal = 80   
+    external = var.host_port 
   }
 }

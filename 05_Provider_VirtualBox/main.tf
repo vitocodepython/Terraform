@@ -19,4 +19,4 @@ resource "virtualbox_vm" "ubuntu_vm" {
   network_adapter { 
     type = "nat"
   }
-}c
+}
